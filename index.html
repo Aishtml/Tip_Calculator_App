@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- font space mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- styling link -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+    <div class="input">
+      <label for="amount">Bill</label>
+      <input class="input__amount" type="text" name="amount" id="amount" placeholder="0">
+
+      <section>
+        <label for="tip--rate">Select Tip %</label>
+        <div class="input__rate">
+          <button value="5">5%</button>
+          <button value="10">10%</button>
+          <button value="15">15%</button>
+          <button value="25">25%</button>
+          <button value="50">50%</button>
+          <input type="text" name="tip" id="tip--rate" placeholder="Custom">
+        </div>
+      </section>
+
+      <label for="People">Number of People</label>
+      <input class="input__people" type="text" name="person" id="people" placeholder="0">
+    </div>
+
+    <div class="tip">
+      <section class="tip__per--person">
+        <h2>Tip Amount <span>/ person</span></h2>
+        <p class="person">$0.00</p>
+      </section>
+
+      <section class="tip__total">
+        <h2>Total <span>/ person</span></h2>
+        <p class="total">$0.00</p>
+      </section>
+
+      <button type="button" class="tip__btn">Reset</button>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
