@@ -75,6 +75,7 @@ label {
 
 .input__rate input {
     background-color: var(--Grey-50);
+    color: var(--Grey-500);
     outline: none;
 }
 
